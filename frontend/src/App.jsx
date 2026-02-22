@@ -19,7 +19,7 @@ function App() {
         setError(null)
         setResult(null)
         try {
-            const res = await fetch('/api/predict', {
+            const res = await fetch('https://fraud-detection-supervisedlearning.onrender.com/predict', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData),
