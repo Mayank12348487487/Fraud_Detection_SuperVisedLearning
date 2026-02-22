@@ -9,7 +9,7 @@ app = FastAPI(title="Fraud Detection API")
 # CORS — allow React dev server
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://onlinefruaddetection.onrender.com"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
