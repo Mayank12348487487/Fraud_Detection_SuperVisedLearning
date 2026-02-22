@@ -1,0 +1,100 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.8rem 0 1.4rem;
+    border-bottom: 1px solid var(--border-subtle);
+    margin-bottom: 0.5rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+}
+
+.logoBox {
+    position: relative;
+    width: 52px;
+    height: 52px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2));
+    border: 1px solid var(--border-active);
+    border-radius: var(--radius-md);
+}
+
+.logoIcon {
+    font-size: 1.6rem;
+    color: var(--accent-blue);
+    filter: drop-shadow(0 0 6px var(--accent-blue));
+}
+
+.logoPulse {
+    position: absolute;
+    inset: -3px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--accent-blue);
+    opacity: 0.4;
+    animation: pulseSafe 2.5s ease-in-out infinite;
+}
+
+.title {
+    font-family: var(--font-display);
+    font-size: 1.9rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: var(--text-primary);
+    line-height: 1.1;
+}
+
+.titleAccent {
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.titleAI {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent-purple);
+    -webkit-text-fill-color: var(--accent-purple);
+    vertical-align: super;
+    margin-left: 2px;
+}
+
+.tagline {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: 2px;
+}
+
+.statusBadge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.25);
+    color: var(--accent-green);
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.activityIcon {
+    font-size: 0.9rem;
+}
+
+.liveDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent-green);
+    box-shadow: 0 0 6px var(--accent-green);
+    animation: pulseSafe 1.8s ease-in-out infinite;
+}

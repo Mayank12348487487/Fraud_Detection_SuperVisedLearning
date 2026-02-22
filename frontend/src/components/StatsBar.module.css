@@ -1,0 +1,76 @@
+.bar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 700px) {
+    .bar {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.9rem 1.1rem;
+    border-radius: var(--radius-md);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid transparent;
+}
+
+.stat_blue {
+    background: rgba(59, 130, 246, 0.08);
+    border-color: rgba(59, 130, 246, 0.15);
+}
+
+.stat_red {
+    background: rgba(239, 68, 68, 0.08);
+    border-color: rgba(239, 68, 68, 0.15);
+}
+
+.stat_green {
+    background: rgba(16, 185, 129, 0.08);
+    border-color: rgba(16, 185, 129, 0.15);
+}
+
+.stat_orange {
+    background: rgba(245, 158, 11, 0.08);
+    border-color: rgba(245, 158, 11, 0.15);
+}
+
+.statIcon {
+    font-size: 1.1rem;
+}
+
+.stat_blue .statIcon {
+    color: var(--accent-blue);
+}
+
+.stat_red .statIcon {
+    color: var(--accent-red);
+}
+
+.stat_green .statIcon {
+    color: var(--accent-green);
+}
+
+.statValue {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    line-height: 1;
+}
+
+.statLabel {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 3px;
+}

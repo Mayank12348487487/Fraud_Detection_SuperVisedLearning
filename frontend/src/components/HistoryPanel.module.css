@@ -1,0 +1,136 @@
+.panel {
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.panelHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.panelIcon {
+    color: var(--accent-blue);
+    font-size: 1rem;
+}
+
+.panelTitle {
+    font-family: var(--font-display);
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    flex: 1;
+}
+
+.count {
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    background: rgba(59, 130, 246, 0.15);
+    color: var(--accent-blue);
+    border: 1px solid rgba(59, 130, 246, 0.25);
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.65rem 0.9rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid transparent;
+    transition: all 0.18s;
+}
+
+.item:hover {
+    border-color: var(--border-subtle);
+}
+
+.itemFraud {
+    background: rgba(239, 68, 68, 0.06);
+    border-color: rgba(239, 68, 68, 0.12);
+}
+
+.itemSafe {
+    background: rgba(16, 185, 129, 0.05);
+    border-color: rgba(16, 185, 129, 0.1);
+}
+
+.itemIcon {
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.iconFraud {
+    color: var(--accent-red);
+}
+
+.iconSafe {
+    color: var(--accent-green);
+}
+
+.itemInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.itemType {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.itemAmount {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    font-family: var(--font-display);
+}
+
+.itemRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.2rem;
+}
+
+.badge {
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.07em;
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+}
+
+.badgeFraud {
+    background: rgba(239, 68, 68, 0.15);
+    color: #fca5a5;
+}
+
+.badgeSafe {
+    background: rgba(16, 185, 129, 0.15);
+    color: #6ee7b7;
+}
+
+.time {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+}
